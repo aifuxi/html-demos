@@ -12,8 +12,13 @@
     body {
       background: #ccc;
     }
-    /* 使用webkit内核的浏览器设置滚动条的样式类 */
+    /*!* 使用webkit内核的浏览器设置滚动条的样式类 *!
     ::-webkit-scrollbar {
+      !* 全局设置隐藏滚动条 *!
+      display: none;
+    }*/
+    .wrapper::-webkit-scrollbar {
+      /* 局部设置隐藏滚动条 */
       display: none;
     }
     .wrapper {
