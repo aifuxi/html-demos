@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>文字垂直居中</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;}
+    body {
+      background-color: #ccc;
+    }
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      min-height: 700px;
+      padding: 16px;
+    }
+    .text-wrapper {
+      width: 300px;
+      border: 1px solid darksalmon;
+      height: 100px;
+    }
+    /* 方法一：flex布局，设置align-items为center */
+    /*.style-1 {
+      display: flex;
+      align-items: center;
+    }*/
+
+    /* 方法二：设置行高等于容器高度 */
+    /*.style-2 {
+      line-height: 100px;
+    }*/
+
+    /* 方法三：display设置table-cell(相当于table里的td)，设置vertical-align为middle(不是center，别搞错了) */
+    .style-3 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-wrapper style-1 style-2 style-3">文字想要垂直居中</div>
+  </div>
+</body>
+</html>
