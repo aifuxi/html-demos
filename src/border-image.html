@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 400px;
+      height: 500px;
+      margin: 200px auto;
+      border: 30px solid #cccccc;
+      border-image: url("./images/borde-image.png") 30 repeat;
+      /*border-image: linear-gradient(yellow, rebeccapurple) 100 repeat;*/
+    }
+    .panel {
+      width: 300px;
+      height: 400px;
+      border: 20px solid  transparent;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-image: url("./images/panel.png") 20 20 repeat;
+      background: rgba(29,107,154,10%);
+    }
+  </style>
+</head>
+<body>
+<div class="container"></div>
+<div class="panel" contenteditable="true"></div>
+</body>
+</html>
